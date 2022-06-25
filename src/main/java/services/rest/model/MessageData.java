@@ -32,3 +32,4 @@ public class MessageData {
 		this.message = message;
 	}
 }
+

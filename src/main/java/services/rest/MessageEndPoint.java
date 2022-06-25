@@ -42,7 +42,7 @@ public class MessageEndPoint {
 	@GET
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response retrive(@PathParam("id") long msgId) {
+	public Response retrieve(@PathParam("id") long msgId) {
 		
 		logger.log(Level.INFO, "Retrieving message using id {0}", msgId);
 		
@@ -93,7 +93,7 @@ public class MessageEndPoint {
 	
 	@GET
 	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
-	public Response retriveAll() {
+	public Response retrieveAll() {
 		
 		logger.info("Retrieving all messages");
 		
